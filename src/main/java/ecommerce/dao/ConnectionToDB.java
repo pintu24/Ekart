@@ -24,6 +24,7 @@ public class ConnectionToDB
 		preparedStatement.setString(3, user.getEmail());
 		preparedStatement.setString(4, user.getMobileNo());
 		preparedStatement.executeUpdate();
+		preparedStatement.close();
 	}
 	catch(SQLException sqe)
 	{

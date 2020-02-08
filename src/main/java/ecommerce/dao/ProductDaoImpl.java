@@ -21,6 +21,7 @@ public class ProductDaoImpl
 	
 	public void InsertProduct(Product product)
 	{
+		
 		Session session=sessionFactory.openSession();
 		session.save(product);
 		Transaction transaction=session.beginTransaction();
